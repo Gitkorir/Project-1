@@ -2,29 +2,137 @@
 <html lang="en">
 
 <head>
-    <title>Web Page Design</title>
-    <link rel="stylesheet" href="style.css">
-
+    <title>Nandi Farm Photography</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <h2 class="logo">Praroz</h2>
-
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </div>
+    <header class="main-header">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1><em>Nandi Farm</em></h1>
+            <p class="tagline"><strong>Where Nature Meets Nurture</strong></p>
         </div>
-    </div>
+    </header>
 
+    <main>
+        <section id="intro" class="intro">
+            <div class="container">
+                <h2>Welcome to Nandi Farm</h2>
+                <p>Nestled in the heart of nature, Nandi Farm is more than just a farm - it's a testament to sustainable
+                    agriculture and harmonious living with nature. Through our lens, we capture the daily rhythms of
+                    farm life, from the morning dew on fresh produce to the golden sunset over our grazing fields.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2>Our Farm Gallery</h2>
+                <div class="gallery-grid">
+                    <article class="photo-card">
+                        <img src="https://images.unsplash.com/photo-1612170153139-6f881ff067e0?auto=format&fit=crop&q=80"
+                            alt="Young chicks">
+                        <h3>New Beginnings</h3>
+                        <p>Our newest additions to the farm family</p>
+                    </article>
+                    <article class="photo-card">
+                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?auto=format&fit=crop&q=80"
+                            alt="Farm rooster">
+                        <h3>Morning Watch</h3>
+                        <p>Our dedicated guardian of the coop</p>
+                    </article>
+                    <article class="photo-card">
+                        <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?auto=format&fit=crop&q=80"
+                            alt="Dairy Cow">
+                        <h3>Milk Provider</h3>
+                        <p>Our local dairy cow breed</p>
+                    </article>
+                    <article class="photo-card">
+                        <img src="https://cdn.britannica.com/70/234870-050-D4D024BB/Orange-colored-cat-yawns-displaying-teeth.jpg"
+                            alt="House cat">
+                        <h3>proud kitty</h3>
+                        <p>Basking Kitty</p>
+                    </article>
+                    <article class="photo-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwASLWBLKCBejdcMG7wBMqbGcUwdOjJgPEQ&s.jpg"
+                            alt="African Pig">
+                        <h3>Baby Pig</h3>
+                        <p>Our resilient young pig</p>
+                    </article>
+                    <article class="photo-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDLIq5gH-3a60SjApRWTQxg05bf76dnvp3Hg&s"
+                            alt="Normadic Bull">
+                        <h3>Normadic Bull</h3>
+                        <p>Associated with Pastoralists</p>
+                    </article>
+                    <article class="photo-card">
+                        <img src="https://cdn.britannica.com/79/232779-050-6B0411D7/German-Shepherd-dog-Alsatian.jpg"
+                            alt="A Dog">
+                        <h3>German Shepherd</h3>
+                        <p>Head of Security</p>
+                    </article>
+                    <article class="photo-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhpwtQUAVk7bV9ZDHI3xS0s8s9MH7C8_RgoA&s.jpg"
+                            alt="A Rabbit">
+                        <h3>Wild Rabbit</h3>
+                        <p>Fluffy Bunny</p>
+                    </article>
+                    <article class="photo-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxCNHUgfcO_XFQILgbgr0qlp1C2sNWQan5yQ&s.jpg"
+                            alt="A donkey">
+                        <h3>A donkey</h3>
+                        <p>Our hard worker</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p><strong>Email:</strong> <a
+                                href="mailto:arnoldkorir201@gmail.com">arnoldkorir201@gmail.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+254113963808">+254113963808</a></p>
+                        <p><strong>Instagram:</strong> <a href="https://instagram.com/ar_noldkorir">@ar_noldkorir</a>
+                        </p>
+                        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/arnold-korir">Arnold Korir</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nandi Farm. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
